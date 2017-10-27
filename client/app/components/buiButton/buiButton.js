@@ -6,8 +6,8 @@ let buiButtonModule = angular.module('buiButton', [
   uiRouter
 ])
 
-.component('buiButton', buiButtonComponent)
+  .component('buiButton', buiButtonComponent)
 
-.name;
+  .name;
 
 export default buiButtonModule;

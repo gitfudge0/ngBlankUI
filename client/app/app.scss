@@ -1,3 +1,4 @@
+
 @import "common/common";
 @font-face {
   font-family: 'Product Sans';
@@ -11,6 +12,12 @@
   font-weight: 600;
   src: url('./assets/fonts/Product Sans Regular.ttf');
 }
+@font-face {
+  font-family: 'Bariol';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/Bariol.ttf');
+}
 
 .app {
   height: 100%;
@@ -21,5 +28,9 @@ body {
   // browsers default to 16px for font-size,
   // so setting top-level font-size to 62.5%
   // scales 1rem to equal 10px.
+  font-family: 'Bariol';
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Product Sans';
 }
