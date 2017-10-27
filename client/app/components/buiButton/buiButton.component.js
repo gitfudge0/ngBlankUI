@@ -1,10 +1,11 @@
-import template from './buiButton.html';
+// import template from './buiButton.html';
 import controller from './buiButton.controller';
 import './buiButton.scss';
 
 let buiButtonComponent = {
+  transclude: true,
   bindings: {},
-  template,
+  template: `<button ng-transclude></button>`,
   controller
 };
 

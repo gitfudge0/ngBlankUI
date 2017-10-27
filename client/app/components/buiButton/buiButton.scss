@@ -1,3 +1,26 @@
 .buiButton {
   color: red;
 }
+
+bui-button.bui-btn button{
+  background: white;
+  padding: 4px 24px 4px 24px;
+  border-radius: 4px;
+  margin: 16px;
+  color: #007aff;
+  border: 1px solid #007aff;
+  box-sizing: border-box;  
+}
+
+bui-button.bui-btn-primary button {
+  background: #007aff;
+  padding: 4px 24px 4px 24px;
+  border-radius: 4px;
+  margin: 16px;
+  color: white;
+  border: 1px solid #007aff;
+}
+
+bui-button.bui-btn-rounded button {
+  border-radius: 16px;
+}
