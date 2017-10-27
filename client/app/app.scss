@@ -1,7 +1,25 @@
 @import "common/common";
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Product Sans Regular.ttf');
+}
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/Product Sans Regular.ttf');
+}
 
 .app {
   height: 100%;
-  background-color: $lightBgColor;
 }
 
+body {
+  height: 100%;
+  // browsers default to 16px for font-size,
+  // so setting top-level font-size to 62.5%
+  // scales 1rem to equal 10px.
+  font-family: 'Product Sans';
+}
