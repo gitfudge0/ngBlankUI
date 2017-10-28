@@ -8,8 +8,14 @@ bui-button.bui-btn button{
   border-radius: 4px;
   margin: 8px;
   color: #007aff;
-  border: 1px solid #007aff;
+  border: 1px solid #007bff;
   box-sizing: border-box;  
+  transition: background 0.12s ease;
+}
+bui-button.bui-btn button:hover,
+bui-button.bui-btn button:active {
+  background: #E8E8E8;
+  transition: background 0.12s ease;
 }
 
 bui-button.bui-btn-primary button {
@@ -19,6 +25,12 @@ bui-button.bui-btn-primary button {
   margin: 8px;
   color: white;
   border: 1px solid #007aff;
+  transition: background 0.12s ease;
+}
+
+bui-button.bui-btn-primary button:hover {
+  background: #0C40E8;
+  transition: background 0.12s ease;
 }
 
 bui-button.bui-btn-rounded button {
