@@ -1,0 +1,102 @@
+@import './../../common/common.scss';
+
+bui-switch input[type="checkbox"] {
+  display:none;
+}
+
+bui-switch input[type="checkbox"] + label {
+  display:inline-block;
+  border: 1px solid #CCC;
+  width: 14px;
+  height: 14px;
+  margin:-2px 10px 0 0;
+  vertical-align:middle;
+  cursor:pointer;
+}
+
+bui-switch input[type="checkbox"]:checked + label::before {
+  content: '\2714';
+  color: white;
+  left: -1px;
+  top: -3px;
+  position: relative;
+  background: $primaryColor;
+  width: 14px;
+  padding: 2px 3px;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+bui-switch input[type="checkbox"]:indeterminate + label::before {
+  content: '⚊';
+  color: white;
+  left: -1px;
+  top: -3px;
+  position: relative;
+  background: $primaryColor;
+  width: 14px;
+  padding: 2px 3px;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+bui-switch input[type="checkbox"].switch + label,
+bui-switch input[type="checkbox"]:checked.switch + label {
+  display: inline-block;
+  border: 0;
+  width: 48px;
+  height: 24px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+bui-switch input[type="checkbox"].switch + label span {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  position: absolute;
+  left: 3px;
+  right: auto;
+  top: 3px;
+  background: white;
+  border: 0;
+  transition: all 0.3s ease;
+}
+bui-switch input[type="checkbox"]:checked.switch + label span {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  position: absolute;
+  left: auto;
+  right: 3px;
+  top: 3px;
+  transition: all 0.3s ease;
+}
+bui-switch input[type="checkbox"]:checked.switch + label::before {
+  content: '';
+  color: white;
+  left: -2px;
+  top: -3px;
+  position: relative;
+  background: transparent;
+  width: 0px;
+  height: 0;
+  padding: 0;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 0;
+  transition: all 0.3s ease;
+}
+bui-switch input[type="checkbox"].switch + label {
+  background: $dangerColor;
+  transition: all 0.3s ease;
+}
+bui-switch input[type="checkbox"]:checked.switch + label {
+  background: $successColor;
+  transition: all 0.3s ease;
+}

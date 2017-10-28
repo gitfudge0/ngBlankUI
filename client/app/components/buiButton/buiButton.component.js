@@ -5,7 +5,7 @@ import './buiButton.scss';
 let buiButtonComponent = {
   transclude: true,
   bindings: {
-    disabled: "="
+    disabled: "<"
   },
   template: `<button ng-transclude ng-disabled="$ctrl.disabled"></button>`,
   controller

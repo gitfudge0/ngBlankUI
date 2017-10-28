@@ -1,10 +1,12 @@
 import angular from 'angular';
 import Home from './home/home';
-import About from './buiButton/buiButton';
+import Button from './buiButton/buiButton';
+import Switch from './buiSwitch/buiSwitch';
 
 let componentModule = angular.module('app.components', [
   Home,
-  About
+  Button,
+  Switch
 ])
 
   .name;
