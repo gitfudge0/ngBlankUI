@@ -1,6 +1,5 @@
 class BuiButtonController {
   constructor() {
-    this.name = 'buiButton';
   }
 }
 

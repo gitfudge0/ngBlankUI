@@ -1,38 +1,116 @@
-.buiButton {
-  color: red;
-}
+@import '../../common/common.scss';
 
-bui-button.bui-btn button{
+// BUI BUTTON DEFAULTS
+bui-button.bui-btn button,
+bui-button.bui-btn-hollow-primary button{
   background: white;
   padding: 4px 24px 4px 24px;
   border-radius: 4px;
   margin: 8px;
-  color: #007aff;
-  border: 1px solid #007bff;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
   box-sizing: border-box;  
   transition: background 0.12s ease;
 }
 bui-button.bui-btn button:hover,
-bui-button.bui-btn button:active {
-  background: #E8E8E8;
-  transition: background 0.12s ease;
+bui-button.bui-btn button:active,
+bui-button.bui-btn-hollow-primary button:hover,
+bui-button.bui-btn-hollow-primary button:active {
+  background: $defaultSupport;
 }
 
+bui-button.bui-btn button:disabled {
+  background: $defaultDisabled;
+}
+bui-button.bui-btn button:disabled:hover {
+  background: $defaultDisabled;
+}
+
+
+// ================= BUTTON SHAPE OPTIONS =================
+
+// BUI ROUNDED BUTTON
+bui-button.bui-btn-rounded button {
+  border-radius: 16px;
+}
+
+// BUI LARGE BUTTON
+bui-button.bui-btn-large button {
+  font-size: 24px;
+}
+
+// BUI SMALL BUTTON
+bui-button.bui-btn-small button {
+  font-size: 12px;
+  padding: 4px 8px 4px 8px;
+}
+
+// ================= BUTTON THEMING OPTIONS =================
+
+// ================= SOLID BUTTONS =================
+// BUI PRIMARY BUTTON
 bui-button.bui-btn-primary button {
-  background: #007aff;
-  padding: 4px 24px 4px 24px;
-  border-radius: 4px;
-  margin: 8px;
+  background: $primaryColor;
   color: white;
-  border: 1px solid #007aff;
-  transition: background 0.12s ease;
+  border: 1px solid $primaryColor;
 }
 
 bui-button.bui-btn-primary button:hover {
-  background: #0C40E8;
-  transition: background 0.12s ease;
+  background: $primarySupport;
 }
 
-bui-button.bui-btn-rounded button {
-  border-radius: 16px;
+// BUI SUCCESS BUTTON
+bui-button.bui-btn-success button {
+  background: $successColor;
+  color: white;
+  border: 1px solid $successColor;
+}
+
+bui-button.bui-btn-success button:hover {
+  background: $successSupport;
+}
+
+// BUI WARNING BUTTON
+bui-button.bui-btn-warning button {
+  background: $warningColor;
+  color: white;
+  border: 1px solid $warningColor;
+}
+
+bui-button.bui-btn-warning button:hover {
+  background: $warningSupport;
+}
+
+// BUI DANGER BUTTON
+bui-button.bui-btn-danger button {
+  background: $dangerColor;
+  color: white;
+  border: 1px solid $dangerColor;
+}
+
+bui-button.bui-btn-danger button:hover {
+  background: $dangerSupport;
+}
+
+// ================= HOLLOW BUTTONS =================
+// BUI HOLLOW WARNING BUTTON
+bui-button.bui-btn-hollow-warning button {
+  color: $warningColor;
+  background: white;
+  border: 1px solid $warningColor;
+}
+
+bui-button.bui-btn-hollow-warning button:hover {
+  background: $defaultSupport;
+}
+
+// BUI HOLLOW DANGER BUTTON
+bui-button.bui-btn-hollow-danger button {
+  color: $dangerColor;
+  background: white;
+  border: 1px solid $dangerColor;
+}
+
+bui-button.bui-btn-hollow-danger button:hover {
+  background: $defaultSupport;
 }

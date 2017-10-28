@@ -4,8 +4,10 @@ import './buiButton.scss';
 
 let buiButtonComponent = {
   transclude: true,
-  bindings: {},
-  template: `<button ng-transclude></button>`,
+  bindings: {
+    disabled: "="
+  },
+  template: `<button ng-transclude ng-disabled="$ctrl.disabled"></button>`,
   controller
 };
 
