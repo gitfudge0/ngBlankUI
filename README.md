@@ -32,6 +32,18 @@ The ```<bui-button>Button</bui-button>``` tag can be used to implement a button 
 .bui-btn-rounded
 ```
 
+### Switches
+
+``` html
+<bui-switch id="termsncondition" value="{{$ctrl.termsncondition}}"></bui-switch>
+```
+
+The ```<bui-switch></bui-switch>``` tag allows the implementation of a toggle, taking either ```true``` or ```false``` values. It has two required attributes -
+
+```id``` allows providing an unique id for the switch component. This is required for the proper functioning of the switch.
+
+```value``` is the value set to the switch. This is also required because what are you going to do with a switch that doesn't give you anything to work with?
+
 ---
 
 ## Dev scripts

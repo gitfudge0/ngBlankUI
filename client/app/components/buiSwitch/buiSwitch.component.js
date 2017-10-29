@@ -4,8 +4,8 @@ import './buiSwitch.scss';
 
 let buiSwitchComponent = {
   bindings: {
-    switchId: "@",
-    switchValue: "="
+    id: "@",
+    value: "="
   },
   template,
   controller
