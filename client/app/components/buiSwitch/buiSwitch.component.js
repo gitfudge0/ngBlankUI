@@ -5,7 +5,7 @@ import './buiSwitch.scss';
 let buiSwitchComponent = {
   bindings: {
     id: "@",
-    value: "="
+    ngModel: "="
   },
   template,
   controller

@@ -42,7 +42,7 @@ The ```<bui-switch></bui-switch>``` tag allows the implementation of a toggle, t
 
 ```id``` allows providing an unique id for the switch component. This is required for the proper functioning of the switch.
 
-```value``` is the value set to the switch. This is also required because what are you going to do with a switch that doesn't give you anything to work with?
+```ng-model``` is the value set to the switch. This is also required because what are you going to do with a switch that doesn't give you anything to work with?
 
 ---
 
