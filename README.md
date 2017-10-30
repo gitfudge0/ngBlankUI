@@ -35,7 +35,7 @@ The ```<bui-button>Button</bui-button>``` tag can be used to implement a button 
 ### Switches
 
 ``` html
-<bui-switch id="termsncondition" value="{{$ctrl.termsncondition}}"></bui-switch>
+<bui-switch id="termsncondition" ng-model="$ctrl.termsncondition"></bui-switch>
 ```
 
 The ```<bui-switch></bui-switch>``` tag allows the implementation of a toggle, taking either ```true``` or ```false``` values. It has two required attributes -
@@ -43,6 +43,27 @@ The ```<bui-switch></bui-switch>``` tag allows the implementation of a toggle, t
 ```id``` allows providing an unique id for the switch component. This is required for the proper functioning of the switch.
 
 ```ng-model``` is the value set to the switch. This is also required because what are you going to do with a switch that doesn't give you anything to work with?
+
+### Checkboxes
+
+```html
+<bui-checkbox id="termscheckbox" class="bui-chkbox-success" ng-model="$ctrl.termscheck">I agree to the T&C</bui-checkbox>
+```
+
+The ```<bui-checkbox></bui-checkbox>``` tag is a simple checkbox element which by default takes ```true``` or ```false``` values. It has three attributes -
+
+```id``` gives an unique id to the checkbox. This is required for the proper functioning of the checkbox.
+
+```ng-model``` is obvious.
+
+```class``` is optional. The following classes can be set to the component -
+
+* bui-chkbox-primary
+* bui-chkbox-success
+* bui-chkbox-warning
+* bui-chkbox-danger
+
+By default, the class ```bui-chkbox-primary``` is set to the component.
 
 ---
 

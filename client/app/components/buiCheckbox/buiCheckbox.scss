@@ -1,0 +1,66 @@
+@import './../../common/common.scss';
+
+bui-checkbox input[type="checkbox"] {
+  display:none;
+}
+
+bui-checkbox label {
+  cursor: pointer;
+}
+
+bui-checkbox input[type="checkbox"] + label {
+  display:inline-block;
+  border: 1px solid #CCC;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  margin: 4px;
+  margin-top: -2px;
+  vertical-align:middle;
+}
+
+bui-checkbox input[type="checkbox"]:checked + label::before {
+  content: '\2714';
+  color: white;
+  left: -1px;
+  top: -3px;
+  position: relative;
+  background: $primaryColor;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 100%;
+  font-weight: 100;
+}
+
+bui-checkbox input[type="checkbox"]:indeterminate + label::before {
+  content: '⚊';
+  color: white;
+  left: -1px;
+  top: -3px;
+  position: relative;
+  background: $primaryColor;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 100%;
+  font-weight: 100;
+}
+
+bui-checkbox.bui-chkbox-primary input[type="checkbox"]:checked + label::before,
+bui-checkbox.bui-chkbox-primary input[type="checkbox"]:indeterminate + label::before {
+  background: $primaryColor;
+}
+
+bui-checkbox.bui-chkbox-success input[type="checkbox"]:checked + label::before,
+bui-checkbox.bui-chkbox-success input[type="checkbox"]:indeterminate + label::before {
+  background: $successColor;
+}
+
+bui-checkbox.bui-chkbox-warning input[type="checkbox"]:checked + label::before,
+bui-checkbox.bui-chkbox-warning input[type="checkbox"]:indeterminate + label::before {
+  background: $warningColor;
+}
+
+bui-checkbox.bui-chkbox-danger input[type="checkbox"]:checked + label::before,
+bui-checkbox.bui-chkbox-danger input[type="checkbox"]:indeterminate + label::before {
+  background: $dangerColor;
+}
