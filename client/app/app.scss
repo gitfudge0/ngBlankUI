@@ -1,23 +1,6 @@
 
 @import "common/common";
-@font-face {
-  font-family: 'Product Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/Product Sans Regular.ttf');
-}
-@font-face {
-  font-family: 'Product Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url('./assets/fonts/Product Sans Regular.ttf');
-}
-@font-face {
-  font-family: 'Bariol';
-  font-style: normal;
-  font-weight: 600;
-  src: url('./assets/fonts/Bariol.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700');
 
 .app {
   height: 100%;
@@ -28,9 +11,9 @@ body {
   // browsers default to 16px for font-size,
   // so setting top-level font-size to 62.5%
   // scales 1rem to equal 10px.
-  font-family: 'Bariol';
+  font-family: 'Roboto';
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Product Sans';
+  font-family: 'Roboto';
 }

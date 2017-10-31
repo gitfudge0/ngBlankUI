@@ -65,6 +65,14 @@ The ```<bui-checkbox></bui-checkbox>``` tag is a simple checkbox element which b
 
 By default, the class ```bui-chkbox-primary``` is set to the component.
 
+### Stepper
+
+```html
+<bui-stepper ng-model="$ctrl.count" diff="2"></bui-stepper>
+```
+
+The ```<bui-stepper>``` component creates an incrementer/decrement control. It lets users increase or decrease a value with a particular difference. This difference is specified with the ```diff``` attribute.
+
 ---
 
 ## Dev scripts
