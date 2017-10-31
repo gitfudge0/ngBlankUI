@@ -1,6 +1,7 @@
 class HomeController {
   constructor() {
     this.name = 'home';
+    this.somevalue = 0;
   }
 }
 

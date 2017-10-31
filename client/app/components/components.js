@@ -4,6 +4,7 @@ import Button from './buiButton/buiButton';
 import Switch from './buiSwitch/buiSwitch';
 import Checkbox from './buiCheckbox/buiCheckbox';
 import Stepper from './buiStepper/buiStepper';
+import Input from './buiInput/buiInput';
 
 let componentModule = angular.module('app.components', [
   Home,
@@ -11,6 +12,7 @@ let componentModule = angular.module('app.components', [
   Switch,
   Checkbox,
   Stepper,
+  Input,
 ])
 
   .name;
