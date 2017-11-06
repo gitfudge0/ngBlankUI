@@ -1,12 +1,20 @@
-import buiButtonComponent from './components/buiButton/buiButton.component';
-import buiSwitchComponent from './components/buiSwitch/buiSwitch.component';
-import buiCheckboxComponent from './components/buiCheckbox/buiCheckbox.component';
+import angular from 'angular';
+import uiRouter from 'angular-ui-router';
+import Common from './common/common';
+import Components from './components/components';
+import AppComponent from './app.component';
+import 'normalize.css';
 
-angular.module('ngBlankUI', [
-  buiButtonComponent,
-  buiSwitchComponent,
-  buiCheckboxComponent
+angular.module('app', [
+  uiRouter,
+  Common,
+  Components
 ])
-  .component('buiButton', buiButtonComponent)
-  .component('buiCheckbox', buiCheckboxComponent)
-  .component('buiSwitch', buiSwitchComponent)
+  .config(['$locationProvider', ($locationProvider) => {
+    "ngInject";
+    // @see: https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions
+    // #how-to-configure-your-server-to-work-with-html5mode
+    $locationProvider.html5Mode(true).hashPrefix('!');
+  }])
+
+  .component('app', AppComponent);

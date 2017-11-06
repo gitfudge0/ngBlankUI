@@ -1,19 +1,6 @@
-// const webpack = require("webpack");
 const path = require("path");
 
-const BUILD_DIR = path.resolve(path.join(__dirname, "dist"));
-const APP_DIR = path.resolve(path.join(__dirname, "client", "app"));
-// let plugins = [], outputFile;
-
 const config = {
-  devtool: "source-map",
-  entry: path.join(APP_DIR + "/app.js"),
-  output: {
-    path: BUILD_DIR,
-    filename: "ngBlankUI.js",
-    library: "ngBlankUI",
-    libraryTarget: "umd"
-  },
   module: {
     loaders: [
       {
@@ -33,7 +20,6 @@ const config = {
       angular: path.resolve(path.join(__dirname, "node_modules", "angular"))
     }
   },
-  // plugins: plugins
 };
 
 module.exports = config;
