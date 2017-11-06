@@ -1,26 +1,35 @@
+@import './../../common/common.scss';
+
 bui-input input[type="text"] {
   border: 1px solid #EEE;
   border-radius: 5px;
   padding: 6px 12px;
+  position: absolute
+}
+
+
+bui-input.bui-rounded input[type="text"] {
+  border-radius: 20px;
+  padding: 6px 16px;
 }
 
 bui-input input::-webkit-input-placeholder{ 
   color: #999;
-  font-size: 12px;
+  font-size: 16px;
 }
 bui-input input::-moz-placeholder{ 
   color: #999;
-  font-size: 12px;
+  font-size: 16px;
 }
 bui-input input:-ms-input-placeholder{ 
   color: #999;
-  font-size: 12px;
+  font-size: 16px;
 }
 bui-input input:-moz-placeholder{ 
   color: #999;
-  font-size: 12px;
+  font-size: 16px;
 }
 bui-input input::placeholder { 
   color: #999;
-  font-size: 12px;
+  font-size: 16px;
 }

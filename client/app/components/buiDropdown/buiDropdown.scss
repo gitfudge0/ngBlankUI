@@ -1,0 +1,30 @@
+@import './../../common/common.scss';
+
+bui-dropdown {
+    position: relative;
+}
+
+bui-dropdown .trigger {
+    background: #FFF;
+    border: 1px solid $primaryColor;
+    border-radius: 2px;
+    color: $primaryColor;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+    &:hover,
+    &:focus {
+        color: #666;
+        background: #ececec; 
+    }
+}
+
+bui-dropdown ul {
+    padding: 8px 20px;
+    border: 1px solid $primaryColor;
+    border-radius: 2px;
+    li {
+        color: $primaryColor;
+        list-style: none;
+    }
+}

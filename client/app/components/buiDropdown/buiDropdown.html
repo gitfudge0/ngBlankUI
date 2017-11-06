@@ -1,0 +1,11 @@
+<!-- <bui-button class="bui-btn bui-btn-primary" ng-click="$ctrl.toggleDropdown()" click-outside="$ctrl.showDropdown = false">More</bui-button>
+<button ng-click="$ctrl.toggleDropdown()" click-outside="$ctrl.showDropdown = false">Click</button>
+<ul class="{{$ctrl.pos}}" ng-show="$ctrl.showDropdown">
+  <li ng-repeat="item in $ctrl.list track by $index" ng-click="item.function()">{{item.item}}</li>
+</ul> -->
+<!-- <div style="position: relative;"> -->
+  <div class="trigger" ng-transclude ng-click="$ctrl.toggleDropdown()" click-outside="$ctrl.showDropdown = false"><span ng-transclude></span></div>
+  <ul ng-show="$ctrl.showDropdown" style="position: relative;">
+    <li ng-repeat="item in $ctrl.list track by $index" ng-click="item.function()">{{item.item}}</li>
+  </ul>
+<!-- </div> -->
