@@ -5,8 +5,7 @@ import './buiDropdown.scss';
 let buiDropdownComponent = {
   transclude: true,
   bindings: {
-    list: "=",
-    pos: "@"
+    list: "="
   },
   template,
   controller
