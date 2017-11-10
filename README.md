@@ -2,6 +2,8 @@
 
 ngBlankUI is a library for unification of development of visual components and user interaction on web applications, done with relative ease and speed. The goal of this library is to provide easy to use components built with the help of AngularJS and made available as AngularJS-native UI components.
 
+[Click here](https://trello.com/b/P1lnxA60/ngblankui) for the trello board to track the progress of the repo.
+
 ## Components
 
 ### Buttons
